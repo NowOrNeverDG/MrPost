@@ -80,9 +80,6 @@ struct HomeNavigationBar: View {
             }
             
         }
-        
-        
-        
     }
 }
 
