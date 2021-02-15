@@ -78,7 +78,6 @@ struct HomeNavigationBar: View {
                     .padding(.top, 5)
                     .foregroundColor(.orange)
             }
-            
         }
     }
 }
