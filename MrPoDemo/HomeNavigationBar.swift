@@ -79,6 +79,7 @@ struct HomeNavigationBar: View {
                     .foregroundColor(.orange)
             }
         }
+        .frame(width:UIScreen.main.bounds.width)
     }
 }
 

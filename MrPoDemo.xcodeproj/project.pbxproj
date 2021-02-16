@@ -104,6 +104,8 @@
 		35774BFC25D9478F009E5DAF /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774BFB25D9478F009E5DAF /* PostImageCell.swift */; };
 		35774C0125D95908009E5DAF /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C0025D95908009E5DAF /* PostDetailView.swift */; };
 		35774C0625D95F88009E5DAF /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C0525D95F88009E5DAF /* HomeNavigationBar.swift */; };
+		35774C0B25DB4C5E009E5DAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C0A25DB4C5E009E5DAF /* HomeView.swift */; };
+		35774C1025DB5019009E5DAF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C0F25DB5019009E5DAF /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +229,8 @@
 		35774BFB25D9478F009E5DAF /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		35774C0025D95908009E5DAF /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		35774C0525D95F88009E5DAF /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
+		35774C0A25DB4C5E009E5DAF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		35774C0F25DB5019009E5DAF /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +283,8 @@
 			children = (
 				35670C3425D243C4001E85A3 /* MrPoDemoApp.swift */,
 				35670C3625D243C4001E85A3 /* ContentView.swift */,
+				35774C0A25DB4C5E009E5DAF /* HomeView.swift */,
+				35774C0F25DB5019009E5DAF /* UserData.swift */,
 				35670C6225D61D9D001E85A3 /* PostCell.swift */,
 				35774BE625D890E7009E5DAF /* PostListView.swift */,
 				35774C0025D95908009E5DAF /* PostDetailView.swift */,
@@ -628,6 +634,8 @@
 				35670D1225D649A2001E85A3 /* PostVIPBadge.swift in Sources */,
 				35670C3525D243C4001E85A3 /* MrPoDemoApp.swift in Sources */,
 				354C450825D7B1AB00B6B1D0 /* PostCellToolBarButton.swift in Sources */,
+				35774C0B25DB4C5E009E5DAF /* HomeView.swift in Sources */,
+				35774C1025DB5019009E5DAF /* UserData.swift in Sources */,
 				35670C6325D61D9D001E85A3 /* PostCell.swift in Sources */,
 				35774C0625D95F88009E5DAF /* HomeNavigationBar.swift in Sources */,
 				35670D1725D64A9D001E85A3 /* Post.swift in Sources */,
