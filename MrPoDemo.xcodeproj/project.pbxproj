@@ -106,6 +106,7 @@
 		35774C0625D95F88009E5DAF /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C0525D95F88009E5DAF /* HomeNavigationBar.swift */; };
 		35774C0B25DB4C5E009E5DAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C0A25DB4C5E009E5DAF /* HomeView.swift */; };
 		35774C1025DB5019009E5DAF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C0F25DB5019009E5DAF /* UserData.swift */; };
+		35774C1525DB9BCF009E5DAF /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C1425DB9BCF009E5DAF /* HScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,7 @@
 		35774C0525D95F88009E5DAF /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
 		35774C0A25DB4C5E009E5DAF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		35774C0F25DB5019009E5DAF /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		35774C1425DB9BCF009E5DAF /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 				35670C3425D243C4001E85A3 /* MrPoDemoApp.swift */,
 				35670C3625D243C4001E85A3 /* ContentView.swift */,
 				35774C0A25DB4C5E009E5DAF /* HomeView.swift */,
+				35774C1425DB9BCF009E5DAF /* HScrollViewController.swift */,
 				35774C0F25DB5019009E5DAF /* UserData.swift */,
 				35670C6225D61D9D001E85A3 /* PostCell.swift */,
 				35774BE625D890E7009E5DAF /* PostListView.swift */,
@@ -638,6 +641,7 @@
 				35774C1025DB5019009E5DAF /* UserData.swift in Sources */,
 				35670C6325D61D9D001E85A3 /* PostCell.swift in Sources */,
 				35774C0625D95F88009E5DAF /* HomeNavigationBar.swift in Sources */,
+				35774C1525DB9BCF009E5DAF /* HScrollViewController.swift in Sources */,
 				35670D1725D64A9D001E85A3 /* Post.swift in Sources */,
 				35774BE725D890E7009E5DAF /* PostListView.swift in Sources */,
 				35774BFC25D9478F009E5DAF /* PostImageCell.swift in Sources */,

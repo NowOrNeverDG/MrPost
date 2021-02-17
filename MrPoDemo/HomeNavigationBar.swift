@@ -12,7 +12,7 @@ private let kButtonHeight: CGFloat = 24
 
 struct HomeNavigationBar: View {
     //@state: 说明变量是现view的一个状态，当变量改变时view就会更新
-    @State var leftPercent: CGFloat // 0 for left, 1 for right
+    @Binding var leftPercent: CGFloat // 0 for left, 1 for right
     
     var body: some View {
         HStack(alignment: .top, spacing: 0) {
@@ -85,6 +85,6 @@ struct HomeNavigationBar: View {
 
 struct HomeNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        HomeNavigationBar(leftPercent: 1)
+        HomeNavigationBar(leftPercent: .constant(0))
     }
 }

@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var leftPercent: CGFloat = 0
     init() {
         UITableView.appearance().separatorStyle = .none
         UITableViewCell.appearance().selectionStyle = .none
+        //UIScrollView.appearance().isPagingEnabled = true
     }
     
     var body: some View {
         NavigationView {
+            GeometryReader{ geometry in
+                HScrollViewController(pageWidth: geometry.size.width, contentSize: CGSize(width: geometry.size.width * 2, height: geometry.size.height), leftPercent: self.$leftPercent)
+            }
             ScrollView(.horizontal, showsIndicators: false, content: {
                 HStack(spacing: 0) {
                     PostListView(category: .recommend)
@@ -22,12 +27,14 @@ struct HomeView: View {
                     PostListView(category: .hot)
                         .frame(width: UIScreen.main.bounds.width)
                 }
+            
                 
             })
             .edgesIgnoringSafeArea(.bottom)//忽略安全区
-            .navigationBarItems(leading: HomeNavigationBar(leftPercent: 0))
+            .navigationBarItems(leading: HomeNavigationBar(leftPercent: $leftPercent))
             .navigationBarTitle("首页")
-            //.navigationBarTitleDisplayMode(.inline)//这句话放在哪里都可以
+            .navigationBarTitleDisplayMode(.inline)//这句话放在哪里都可以
+            
             
         }
     }
