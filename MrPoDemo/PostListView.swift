@@ -31,8 +31,7 @@ struct PostListView: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
-        }
-        
+        }   
     }
 }
 

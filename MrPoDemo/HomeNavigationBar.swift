@@ -39,7 +39,6 @@ struct HomeNavigationBar: View {
                         .opacity(Double(1 - leftPercent * 0.5))//透明度
                         .onTapGesture{//点击响应事件
                             withAnimation { self.leftPercent = 0 }
-
                         }
                     
                     Spacer()

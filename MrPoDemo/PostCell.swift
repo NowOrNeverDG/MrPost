@@ -61,7 +61,8 @@ struct PostCell: View {
             if !post.images.isEmpty {
                 PostImageCell(images: post.images, width: UIScreen.main.bounds.width-30)
             }
-            Divider()
+            
+            Divider()//分割线
             
             HStack(spacing: 0) {
                 Spacer()

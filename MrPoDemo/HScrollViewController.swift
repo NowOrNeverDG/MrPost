@@ -27,8 +27,8 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
         let scrollView = UIScrollView()
         scrollView.bounces = false//回弹效果
         scrollView.isPagingEnabled = true//分页效果
-        scrollView.showsVerticalScrollIndicator = false//shuxiang滚动条
-        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false//竖向滚动条
+        scrollView.showsHorizontalScrollIndicator = false//横向滚动条
         scrollView.delegate = context.coordinator
         context.coordinator.scrollView = scrollView
         
@@ -66,9 +66,9 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
         }
         
         func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-            parent.leftPercent = scrollView.contentOffset.x < parent.pageWidth * 0.5 ? 0:1
+            withAnimation {
+                parent.leftPercent = scrollView.contentOffset.x < parent.pageWidth * 0.5 ? 0:1
+            }
         }
     }
 }
-
-
