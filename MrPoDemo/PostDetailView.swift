@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostDetailView: View {
     let post: Post
-    
+    @EnvironmentObject var userData: UserData
     var body: some View {
         List {
             PostCell(post: post)
@@ -26,6 +26,7 @@ struct PostDetailView: View {
 
 struct PostDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PostDetailView(post: postList.list[0])
+        let userData = UserData()
+        return PostDetailView(post: userData.recommendPostList.list[0]).environmentObject(userData)
     }
 }
