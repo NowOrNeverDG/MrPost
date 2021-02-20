@@ -10,6 +10,8 @@ import SwiftUI
 struct CommentTextView: UIViewRepresentable {
     @Binding var text: String
     
+    let beginEdittingOnAppear: Bool
+    
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
@@ -27,11 +29,18 @@ struct CommentTextView: UIViewRepresentable {
     
     
     func updateUIView(_ uiView: UITextView, context: Context) {
-        
+        if beginEdittingOnAppear,
+           !context.coordinator.didBecomeFirstResponder,
+           uiView.window != nil,
+           !uiView.isFirstResponder {
+            uiView.becomeFirstResponder()
+            context.coordinator.didBecomeFirstResponder = true
+        }
     }
     
     class Coordinator: NSObject, UITextViewDelegate {
         let parent: CommentTextView
+        var didBecomeFirstResponder: Bool = false
         
         init(_ view: CommentTextView) { parent = view }
         
@@ -44,6 +53,6 @@ struct CommentTextView: UIViewRepresentable {
 
 struct CommentTextView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentTextView(text: .constant(""))
+        CommentTextView(text: .constant(""),beginEdittingOnAppear: true)
     }
 }

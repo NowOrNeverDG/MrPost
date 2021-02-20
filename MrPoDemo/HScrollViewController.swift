@@ -25,6 +25,7 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> some UIViewController {
         let scrollView = UIScrollView()
+        
         scrollView.bounces = false//回弹效果
         scrollView.isPagingEnabled = true//分页效果
         scrollView.showsVerticalScrollIndicator = false//竖向滚动条

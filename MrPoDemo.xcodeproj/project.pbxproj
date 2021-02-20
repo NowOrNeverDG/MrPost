@@ -109,6 +109,7 @@
 		35774C1525DB9BCF009E5DAF /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C1425DB9BCF009E5DAF /* HScrollViewController.swift */; };
 		35774C6C25DF5D70009E5DAF /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C6B25DF5D70009E5DAF /* CommentInputView.swift */; };
 		35774C7125DF63A8009E5DAF /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C7025DF63A8009E5DAF /* CommentTextView.swift */; };
+		35774C7625DF9E17009E5DAF /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C7525DF9E17009E5DAF /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +238,7 @@
 		35774C1425DB9BCF009E5DAF /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 		35774C6B25DF5D70009E5DAF /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
 		35774C7025DF63A8009E5DAF /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
+		35774C7525DF9E17009E5DAF /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 				35670D1625D64A9D001E85A3 /* Post.swift */,
 				35774BFB25D9478F009E5DAF /* PostImageCell.swift */,
 				35774C7025DF63A8009E5DAF /* CommentTextView.swift */,
+				35774C7525DF9E17009E5DAF /* KeyboardResponder.swift */,
 				35670C6725D6280C001E85A3 /* Resources */,
 				35670C3825D243C5001E85A3 /* Assets.xcassets */,
 				35670C3D25D243C5001E85A3 /* Info.plist */,
@@ -643,6 +646,7 @@
 				35670D1225D649A2001E85A3 /* PostVIPBadge.swift in Sources */,
 				35670C3525D243C4001E85A3 /* MrPoDemoApp.swift in Sources */,
 				35774C7125DF63A8009E5DAF /* CommentTextView.swift in Sources */,
+				35774C7625DF9E17009E5DAF /* KeyboardResponder.swift in Sources */,
 				354C450825D7B1AB00B6B1D0 /* PostCellToolBarButton.swift in Sources */,
 				35774C0B25DB4C5E009E5DAF /* HomeView.swift in Sources */,
 				35774C1025DB5019009E5DAF /* UserData.swift in Sources */,

@@ -38,6 +38,7 @@ struct HomeView: View {
             .navigationBarTitle("首页")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())//修改ipad上的样式和iPhone一样，ipad默认双界面
     }
 }
 
