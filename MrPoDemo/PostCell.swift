@@ -9,14 +9,9 @@ import SwiftUI
 
 struct PostCell: View {
     var post: Post
-    
-    var bindingPost: Post {
-        userData.post(forId: post.id)!
-    }
-    
-    @State var presentComment: Bool = false//打开评论输入页
-    
     @EnvironmentObject var userData: UserData
+    var bindingPost: Post { userData.post(forId: post.id)! }
+    @State var presentComment: Bool = false//打开评论输入页
     
     var body: some View {
         var post = bindingPost

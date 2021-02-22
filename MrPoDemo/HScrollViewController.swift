@@ -45,8 +45,7 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
     }
     
     func makeCoordinator() -> Coordinator {
-        return Coordinator(self)
-        
+        return Coordinator(self) 
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {

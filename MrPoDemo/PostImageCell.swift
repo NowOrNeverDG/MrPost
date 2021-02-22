@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-private let kImageSpace: CGFloat = 6
+private let kImageSpace: CGFloat = 6//Space between Images
 
 struct PostImageCell: View {
     let images: [String]
     let width: CGFloat
     
     var body: some View {
-        //Group {
+        Group {
             if images.count == 1 {
                 loadImage(name: images[0])
-                    .resizable()
+                    .resizable()//
                     .scaledToFill()
                     .frame(width: width, height:width*0.75)
                     .clipped()
@@ -41,7 +41,7 @@ struct PostImageCell: View {
                     PostImageCellRow(images: Array(images[3...5]), width: width)
                 }
             }
-        //}
+        }
     }
 }
 

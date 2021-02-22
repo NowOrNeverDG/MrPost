@@ -23,16 +23,16 @@ struct HomeView: View {
                                       contentSize: CGSize(width: geometry.size.width * 2,
                                                           height: geometry.size.height),
                                       leftPercent: self.$leftPercent)
-             {
+                {
                     HStack(spacing: 0) {
                     PostListView(category: .recommend)
                         .frame(width: UIScreen.main.bounds.width)
 
                     PostListView(category: .hot)
                         .frame(width: UIScreen.main.bounds.width)
+                    }
                 }
             }
-                }
             .edgesIgnoringSafeArea(.bottom)//忽略安全区
             .navigationBarItems(leading: HomeNavigationBar(leftPercent: $leftPercent))
             .navigationBarTitle("首页")

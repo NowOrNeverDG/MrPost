@@ -16,15 +16,14 @@ struct Post: Codable, Identifiable {
     let vip: Bool // if vip
     let name: String
     let date: String
-    
-    var isFollowed: Bool// if followed
-    
     let text: String //post concept
     let images: [String]//post pic
     
+    var isFollowed: Bool// if followed
+    var isLiked: Bool// if liked
+
     var commentCount: Int
     var likeCount: Int
-    var isLiked: Bool
 }
 
 extension Post {

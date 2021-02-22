@@ -9,9 +9,8 @@ import SwiftUI
 
 struct PostListView: View {
     let category: PostListCategory//PostListView的复用
-    
     @EnvironmentObject var userData: UserData
-    
+
     var body: some View {
         List {
             ForEach(userData.postList(for: category).list) { post in
