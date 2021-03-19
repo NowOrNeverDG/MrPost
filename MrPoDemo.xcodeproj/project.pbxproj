@@ -110,6 +110,9 @@
 		35774C6C25DF5D70009E5DAF /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C6B25DF5D70009E5DAF /* CommentInputView.swift */; };
 		35774C7125DF63A8009E5DAF /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C7025DF63A8009E5DAF /* CommentTextView.swift */; };
 		35774C7625DF9E17009E5DAF /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35774C7525DF9E17009E5DAF /* KeyboardResponder.swift */; };
+		358705B026040209007C09C4 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358705AF26040209007C09C4 /* DarkModeView.swift */; };
+		358705BD26040FA6007C09C4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358705BC26040FA6007C09C4 /* Colors.xcassets */; };
+		3587060426043156007C09C4 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587060326043156007C09C4 /* NetworkTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +242,9 @@
 		35774C6B25DF5D70009E5DAF /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
 		35774C7025DF63A8009E5DAF /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
 		35774C7525DF9E17009E5DAF /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		358705AF26040209007C09C4 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
+		358705BC26040FA6007C09C4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3587060326043156007C09C4 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,8 +311,13 @@
 				35774BFB25D9478F009E5DAF /* PostImageCell.swift */,
 				35774C7025DF63A8009E5DAF /* CommentTextView.swift */,
 				35774C7525DF9E17009E5DAF /* KeyboardResponder.swift */,
+				358705AF26040209007C09C4 /* DarkModeView.swift */,
+				3587060226043119007C09C4 /* Model */,
+				3587060126043109007C09C4 /* View */,
+				35870600260430F9007C09C4 /* Network */,
 				35670C6725D6280C001E85A3 /* Resources */,
 				35670C3825D243C5001E85A3 /* Assets.xcassets */,
+				358705BC26040FA6007C09C4 /* Colors.xcassets */,
 				35670C3D25D243C5001E85A3 /* Info.plist */,
 				35670C3A25D243C5001E85A3 /* Preview Content */,
 			);
@@ -429,6 +440,28 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		35870600260430F9007C09C4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3587060326043156007C09C4 /* NetworkTest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3587060126043109007C09C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3587060226043119007C09C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -547,6 +580,7 @@
 				35670CC125D6280C001E85A3 /* eb5c94aegy1gav25n5ibjj20zk1h8wuu.jpg in Resources */,
 				35670CDA25D6280C001E85A3 /* 006gWxMEly1gavap8vsqaj30hs0bwgm6.jpg in Resources */,
 				35670CC525D6280C001E85A3 /* 8a0b5544gy1gauy2flua6j20u00hitab.jpg in Resources */,
+				358705BD26040FA6007C09C4 /* Colors.xcassets in Resources */,
 				35670CDD25D6280C001E85A3 /* 8a0b5544gy1gauy2g35yoj20u00fomzf.jpg in Resources */,
 				35670D0C25D6280C001E85A3 /* 6ec3b446gy1gavd523embj20j60pytd6.jpg in Resources */,
 				35670CCB25D6280C001E85A3 /* 6a2afec3gy1gaulykcejqj20t5145wns.jpg in Resources */,
@@ -645,6 +679,7 @@
 				35670C3725D243C4001E85A3 /* ContentView.swift in Sources */,
 				35670D1225D649A2001E85A3 /* PostVIPBadge.swift in Sources */,
 				35670C3525D243C4001E85A3 /* MrPoDemoApp.swift in Sources */,
+				3587060426043156007C09C4 /* NetworkTest.swift in Sources */,
 				35774C7125DF63A8009E5DAF /* CommentTextView.swift in Sources */,
 				35774C7625DF9E17009E5DAF /* KeyboardResponder.swift in Sources */,
 				354C450825D7B1AB00B6B1D0 /* PostCellToolBarButton.swift in Sources */,
@@ -654,6 +689,7 @@
 				35774C0625D95F88009E5DAF /* HomeNavigationBar.swift in Sources */,
 				35774C6C25DF5D70009E5DAF /* CommentInputView.swift in Sources */,
 				35774C1525DB9BCF009E5DAF /* HScrollViewController.swift in Sources */,
+				358705B026040209007C09C4 /* DarkModeView.swift in Sources */,
 				35670D1725D64A9D001E85A3 /* Post.swift in Sources */,
 				35774BE725D890E7009E5DAF /* PostListView.swift in Sources */,
 				35774BFC25D9478F009E5DAF /* PostImageCell.swift in Sources */,

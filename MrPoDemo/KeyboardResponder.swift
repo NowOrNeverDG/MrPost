@@ -18,7 +18,7 @@ class KeyboardResponder: ObservableObject {
     }
     
 //    //IOS9之前必须写，不然crush
-//    deinit {
+//    deinit {  
 //        NotificationCenter.default.removeObserver(self)
 //    }
     
