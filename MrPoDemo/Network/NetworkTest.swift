@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import Alamofire
+
+///let url = "https://raw.githubusercontent.com/xiaoyouxinqing/PostDemo/master/PostDemo/Resources/PostListData_recommend_1.json"
 
 struct NetworkTest: View {
     @State private var text = ""
@@ -23,38 +26,25 @@ struct NetworkTest: View {
         }
     }
     
+    ///为什么不func startLoad() -> Result<Data,error>?
+    ///发出网络请求之后会等待网络完成，获得结果，不管是数据还是错误信息，这样很耗时，所以需要异步（放在子线程）
     func startLoad() {
-        let url = URL(string: "https://raw.githubusercontent.com/xiaoyouxinqing/PostDemo/master/PostDemo/Resources/PostListData_recommend_1.json")!
-        let task = URLSession.shared.dataTask(with: url){ data, response, error in
-            if let error = error {
-                DispatchQueue.main.async {
-                    self.text = error.localizedDescription
+        NetworkManager.shared.requestGet(path: "PostListData_recommend_1.json", parameters: nil) { (result) in
+            switch result {
+            case let .success(data):
+                guard let list = try? JSONDecoder().decode(PostList.self, from: data) else {
+                    self.updateText("Can not parse data")
+                    return
                 }
-                return
+                self.updateText("Post count \(list.list.count)")
+            case let .failure(error):
+                self.updateText(error.localizedDescription)
             }
-            
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-                self.updateText("Invalid response")
-                return
-            }
-            
-            guard let data = data else {
-                self.updateText("No data")
-                return
-            }
-            
-            guard let list = try? JSONDecoder().decode(PostList.self, from: data) else {
-                self.updateText("Can not parse data")
-                return
-            }
-            
-            self.updateText("Post count \(list.list.count)")
-         }
-        task.resume()
+        }
     }
     
     func updateText(_ text: String) {
-        DispatchQueue.main.async { self.text = text;}
+        self.text = text;
     }
 }
 
